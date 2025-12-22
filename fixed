@@ -1,0 +1,39 @@
+#include <iostream>
+#include <iomanip>  // Thêm thư viện này để sử dụng setw
+using namespace std;
+
+int main() {
+    cout << "\n=== THONG TIN XET TUYEN ===\n\n";
+
+    cout << "Ho va ten thi sinh : ";
+    string name;
+    int tuoi;
+    double diem1, diem2, diem3;
+
+    getline(cin, name);
+    cout << "Nam sinh : ";
+    cin >> tuoi;
+    cout << "Diem thi mon 1 : ";
+    cin >> diem1;
+    cout << "Diem thi mon 2 : ";
+    cin >> diem2;
+    cout << "Diem thi mon 3 : ";
+    cin >> diem3;
+
+    double diemtrungbinh = (diem1 + diem2 + diem3) / 3.0;
+
+    // In kết quả dạng bảng
+    cout << "\n+------------------------+------------------+\n";
+    cout << setw(25) << left << "| Ho va ten" << "| " << name << endl;
+    cout << "+------------------------+------------------+\n";
+    cout << setw(25) << left << "| Nam sinh" << "| " << tuoi << endl;
+    cout << "+------------------------+------------------+\n";
+    cout << setw(25) << left << "| Diem thi mon 1" << "| " << diem1 << endl;
+    cout << setw(25) << left << "| Diem thi mon 2" << "| " << diem2 << endl;
+    cout << setw(25) << left << "| Diem thi mon 3" << "| " << diem3 << endl;
+    cout << "+------------------------+------------------+\n";
+    cout << setw(25) << left << "| Diem trung binh" << "| " << fixed << setprecision(2) << diemtrungbinh << endl;
+    cout << "+------------------------+------------------+\n";
+
+    return 0;
+}

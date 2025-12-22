@@ -1,0 +1,15 @@
+#include <iostream>
+#include <cstdlib>  // Thêm thư viện này cho rand() và srand()
+#include <ctime>
+using namespace std;
+
+int main () {
+    srand(time(0));
+    int xucsac = rand() % 6 + 1;
+    int xucsac1 = rand() % 6 + 1;
+    int xucsac2 = rand() % 6 + 1;
+    cout << "xuc sac 1 la: " << xucsac << endl;
+    cout << "xuc sac 2 la: " << xucsac1 << endl;
+    cout << "xuc sac 3 la: " << xucsac2 << endl;
+    return 0;
+}
