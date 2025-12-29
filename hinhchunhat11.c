@@ -1,27 +1,47 @@
 #include<stdio.h>
-int main () {
-    int songang,sodoc;
-    scanf("%i",&songang);
-    int j ;
-    for ( int i =1 ; i<=songang; i++){
-        if(i==1||i==songang){
-            for ( j =0; j <songang; j++){
-                printf ("*");
+int main (){
+	int testcase;
+	scanf("%i",&testcase);
+	for ( int j =0; j<testcase;j++){
+	int xs;
+	scanf("%i",&xs);
+	int array[xs];
+	
+	
+	for (int i=0;i<xs;i++){
+			scanf("%i",&array[i]);
+			
+	
+	
+	}
+	int solon=0;
+	for ( int i =0;i<xs;i++){
+		if ( array[i]>solon){
+			solon=array[i];
+		
+		}
+	
+	
+	}
+	printf("%i\n",solon);
+	for ( int i =0;i<xs;i++){
+		if (array[i]==solon){
+			printf ("%i ",i);
+		
+		}
+	
+	
+}
+printf("\n");
+}
+}
 
-            }
-            printf ("\n");
-        
-        }
-       if ( i >1 && i <songang){
-        for ( j =0; j <songang-1; j++){
-            if ( j  ==0){
-        printf ("*");}
-        if (j ==songang-2){
-            printf ("*\n");
-        }
-        else{
-            printf (".");
-        }
-    }
-    
-}}}
+
+
+
+
+
+
+
+
+
