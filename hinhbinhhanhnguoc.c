@@ -7,9 +7,8 @@ int main () {
     int temp=dodai;
     scanf("%i%i",&sodong,&dodai);
     for ( int i =0; i<sodong;i++){
-        for ( int k=0;k<temp-1;k++){
+        for ( int k=0;k<i;k++){
           printf ("~");
-          temp--;
         }
 
 
